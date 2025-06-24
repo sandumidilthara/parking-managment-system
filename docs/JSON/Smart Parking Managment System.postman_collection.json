@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "feabec9a-2540-4e1e-8c69-6e044d54c559",
+		"name": "Smart Parking Managment System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40189553"
+	},
+	"item": [
+		{
+			"name": "update user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"kasun chamara\",\r\n    \"email\" : \"kasun123@gmail.com\",\r\n    \"password\" : \"kasun12@#\",\r\n    \"role\" : \"DRIVER\",\r\n    \"createdAt\" : \"2025-06-24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/users/updateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"updateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \r\n    \"email\" : \"kasun123@gmail.com\",\r\n    \"password\" : \"kasun12@#\"\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/users/deleteUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"deleteUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all vehicle",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/v1/vehicle/getAllVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"getAllVehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save vehicle",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"licensePlate\" : \"BHW 1234\",\r\n    \"model\" : \"aqva\",\r\n    \"email\" : \"test4@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/vehicle/saveVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"saveVehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update vehicle",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"licensePlate\" : \"BHW 1234\",\r\n    \"model\" : \"aqva 56\",\r\n    \"email\" : \"test4@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/vehicle/updateVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"updateVehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save parking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n         \r\n        \"location\": \"dodanduwa\",\r\n        \"city\": \"kandy\",\r\n        \"email\": \"test4@gmail.com\",\r\n        \"payAmount\": 5000,\r\n        \"locationCode\": 2345,\r\n        \"available\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/v1/parking/saveParking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"saveParking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update parking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n         \"id\": \"9fbfa230-e9db-4f06-bd27-9959b3f4a6ab\",\r\n        \"location\": \"dodanduwa main road\",\r\n        \"city\": \"kandy\",\r\n        \"email\": \"test4@gmail.com\",\r\n        \"payAmount\": 5000,\r\n        \"locationCode\": 2345,\r\n        \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/v1/parking/updateParking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"updateParking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete parking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n         \"id\": \"9fbfa230-e9db-4f06-bd27-9959b3f4a6ab\",\r\n        \"location\": \"dodanduwa main road\",\r\n        \"city\": \"kandy\",\r\n        \"email\": \"test4@gmail.com\",\r\n        \"payAmount\": 5000,\r\n        \"locationCode\": 2345,\r\n        \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/v1/parking/deleteParking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"deleteParking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Paymets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\r\n\r\n      \r\n        \"licensePlate\": \"ABC 123\",\r\n        \"userEmail\": \"test4@gmail.com\",\r\n        \"parkingLocation\": \"weligama\",\r\n        \"amount\": 2000,\r\n        \"paymentDate\": \"2025-06-24\",\r\n        \"bookingDate\": \"2025-06-24\",\r\n        \"paymentTime\": \"23:23:56\"\r\n    \r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/v1/payments/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"payments",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/users/getAllUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"getAllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n\r\n{\r\n    \"name\" :  \"sandumi\",\r\n    \"email\" : \"test4@gmail.com\",\r\n    \"password\" : \"fvjj3234562@\",\r\n    \"role\" : \"DRIVER\",\r\n    \"createdAt\" : \"2024:09:08\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/user/saveUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"saveUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete vehicle",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"licensePlate\" : \"BHW 1234\",\r\n    \"model\" : \"aqvani\",\r\n    \"email\" : \"test4@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/vehicle/deleteVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"vehicle",
+						"deleteVehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get parking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n         \r\n        \"location\": \"dodanduwa main road\",\r\n        \"city\": \"kandy\",\r\n        \"email\": \"test4@gmail.com\",\r\n        \"payAmount\": 5000,\r\n        \"locationCode\": 2345,\r\n        \"available\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/v1/parking/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
